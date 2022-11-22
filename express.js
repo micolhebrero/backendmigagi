@@ -8,8 +8,19 @@ const server = app.listen(PORT, () => {
     console.log(`Servidor prendido escuchadno ${PORT}`)
 })
 
+let productos = getall
+
 app.get('/', (req, res) => {
     res.send({ mesnaje: `Esto es una prueba`})
 })
 
-server.on('error', (err) => {console.error(err)}) 
+app.get('/productos', (req, res) => {
+    res.send(productos)
+})
+
+app.get('/random', (req, res) => {
+    getbyId = [];
+    res.send(productos)
+})
+
+server.on('error', (err) => {console.error(err)})
