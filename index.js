@@ -1,4 +1,4 @@
-const http = require('http')
+const http = require( 'http' )
 
 const PORT = 8080
 
@@ -7,7 +7,6 @@ const server = http.createServer((peticion, respuesta) => {
 })
 
 const connectedServer = server.lister(PORT, () => {
-    console.log(`Servidor HTTP escuchando el puerto 
-    ${connectedServer.adress().port} `)
+    console.log(`Servidor HTTP escuchando el puerto ${connectedServer.adress().port} `)
 
 })
