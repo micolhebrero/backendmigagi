@@ -32,3 +32,6 @@ app.listen(8080, (error) => {
     }
 
 });
+
+let PORT = 8080;
+const server = app.listen(PORT, () => console.log("escuchando en" + PORT));
