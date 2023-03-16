@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import Contenedor from "../api.js";
 
+const socket = io.connect();
+
 const router = Router()
 
 const api = new Contenedor('./src/productos.txt')
